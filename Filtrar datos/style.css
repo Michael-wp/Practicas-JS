@@ -1,0 +1,13 @@
+table {
+    width: 50%;
+    border-collapse: collapse; /* Elimina espacios entre bordes */
+    font-family: Arial, sans-serif;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    background-color: #ea3030; /* Color de fondo para los encabezados */
+}
