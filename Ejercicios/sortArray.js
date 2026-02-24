@@ -6,42 +6,8 @@
 
 let lista = [1, 2, 3, 4, 5,  7, 9, 0];
 
-function reDesorden(array){
-    return array.sort((a, b) => Math.random() >= 0.5 ? -1 : 1);
-
+function reDesorden(listaNueva){
+    return listaNueva.sort((a, b) => Math.random() >= 0.5 ? -1 : 1);
 }
 
 console.log(reDesorden(lista));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
