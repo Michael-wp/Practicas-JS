@@ -1,9 +1,9 @@
 
-function mcm(a = [], b = []){
-    let valoresA = descomponerNumero(a);
-    let valoresB = descomponerNumero(b);
+function mcm(valorUno, valorDos){
+    let listaValoresA = descomponerNumero(valorUno);
+    let listaValoresB = descomponerNumero(valorDos);
 
-    let listaCalcular = retornarCoincidentes(valoresA, valoresB);
+    let listaCalcular = retornarCoincidentes(listaValoresA, listaValoresB);
 
     console.log("El listado es: ", listaCalcular);
     let producto = listaCalcular.reduce((acum, valAct) => acum*valAct, 1);
