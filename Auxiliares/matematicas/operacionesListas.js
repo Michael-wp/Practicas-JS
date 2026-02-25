@@ -9,7 +9,7 @@ export function multiplicarLista(lista = []){
 }
 
 export function contarRepeticion(lista = [], elemento){
-    return lista.reduce(
+    return [...lista].reduce(
         (contador, valor) => 
         valor === elemento ? contador + 1 : contador, 
         0
