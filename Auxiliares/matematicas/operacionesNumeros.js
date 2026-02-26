@@ -12,3 +12,8 @@ export function descomponerNumero(numero){
     }
     return listado;
 }
+
+
+function esPar(num){
+    return num % 2 === 0;
+}
