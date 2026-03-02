@@ -2,9 +2,6 @@
 
 // La función tiene como único argumento la lista a comprobar y devolverá true si está ordenada o false en caso contrario.
 
-
-
-
 function ordenAsc(lista){
     let nuevaLista = [];
 
@@ -12,7 +9,7 @@ function ordenAsc(lista){
         if(i == 0){
             continue;
         }
-        else if ((lista[i] - lista[i-1]) === 1){
+        else if ((lista[i] - lista[i-1]) >= 0){
             continue;
         }
         else if ((lista[i] - lista[i-1]) != 1){
@@ -25,41 +22,10 @@ function ordenAsc(lista){
 }
 
 
-
-
-
 //Ejemplos
 console.log(ordenAsc([1,2,3,6,7,19])); //false
 console.log(ordenAsc([12,2,9,6,7,19])); //false
 console.log(ordenAsc([4])); //true
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
