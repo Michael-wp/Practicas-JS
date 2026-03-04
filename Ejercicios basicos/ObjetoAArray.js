@@ -5,7 +5,7 @@
 function convertirObjectoAArray(objeto){
     let resultado = [];
     Object.entries(objeto).forEach(([clave, valor]) => {
-        resultado.push(clave, valor);
+        resultado.push([clave, valor]);
     });
     return resultado;
 }

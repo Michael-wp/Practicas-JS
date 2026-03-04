@@ -3,7 +3,15 @@
 export function multiplicarLista(lista = []){
     return lista.reduce(
         (acumulado, valorActual) => 
-        acumulado*valorActual, 
+            acumulado*valorActual, 
+        1
+    );
+}
+
+export function sumarLista(lista = []){
+    return lista.reduce(
+        (acumulado, valorActual) =>
+            acumulado + valorActual,
         1
     );
 }
