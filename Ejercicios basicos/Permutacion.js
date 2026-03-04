@@ -6,16 +6,15 @@
 
 // En las permutacinoes importa el orden en que se coloquen los caracteres. Es decir que acd no es lo mismo que cda.
 
-
 function mezclarSimple(lista){
     let listaNueva = lista.sort(() => Math.random() - 0.5);
     return listaNueva;
 }
 
-
 function permutacion(cadena){
     let lista = cadena.split("");
     let listaFinal = [];
+
     for(let i = 0; lista.length > i; i++){
         let j = 0;
         while(j < lista.length){
@@ -28,9 +27,7 @@ function permutacion(cadena){
                 j=0;
             }
         }
-
     }
-  
 
     return listaFinal.sort().join("-");
 }

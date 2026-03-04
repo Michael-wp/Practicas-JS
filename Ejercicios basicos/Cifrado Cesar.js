@@ -8,9 +8,6 @@
 
 // Para comprobar el funcionamiento debieras crear la función descifrar()
 
-
-
-
 function cifrar(palabra, clave){
     let abcdario = "abcdefghijklmnñopqrstuvwxyz";
     let cifrado = "";
@@ -27,13 +24,10 @@ function cifrar(palabra, clave){
         else{
             cifrado += abcdario[posicionClave];
         }
-
-        
     }
     
     return cifrado;
 }
-
 
 function descifrar(palabra, clave){
     let abcdario = "abcdefghijklmnñopqrstuvwxyz";
@@ -53,8 +47,6 @@ function descifrar(palabra, clave){
         else{
             cifrado += abcdario[posicionClave];
         }
-
-
     }
     return cifrado
 }
