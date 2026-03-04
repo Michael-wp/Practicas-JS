@@ -13,24 +13,6 @@ function simbEquilibrados(cadena){
         ((carac in objeto)) ? objeto[carac]++ :objeto[carac] = 1;
     });
 
-    if(("{" in objeto) && objeto["{"] === objeto["}"]){
-        return true;
-    }
-    if(("[" in objeto) && objeto["["] === objeto["]"]){
-        return true;
-    }
-    if(("(" in objeto) && objeto["("] === objeto[")"]){
-        return true;
-    }
-    if(("}" in objeto) && objeto["{"] === objeto["}"]){
-        return true;
-    }
-    if(("]" in objeto) && objeto["["] === objeto["]"]){
-        return true;
-    }
-    if((")" in objeto) && objeto["("] === objeto[")"]){
-        return true;
-    }
     
     return -1;
 }
